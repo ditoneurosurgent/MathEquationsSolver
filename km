@@ -1,0 +1,12 @@
+function buttonclick(){
+      document.getElementById("output").removeAttribute("hidden");
+      var a = document.getElementById("inputt").value;
+      var b = document.getElementById("inputt2").value;
+      var c = document.getElementById("inputt3").value;
+      var d = document.ktElementById("inputt4").value;
+      var p = -b/(3*1*a);
+      var q = +p*p*p + (b*1*c-3*a*d)/(6*a*a);
+      var r = 1*c/(3*a)
+      var s = +Math.cbrt(+q+Math.sqrt(q*q+(+r-p*p)*(+r-p*p)*(+r-p*p))) +  +Math.cbrt(+q-Math.sqrt(q*q+(+r-p*p)*(+r-p*p)*(+r-p*p))) +p;
+      document.getElementById("demmo").innerHTML="Sorry, equation has no solution. However, other properties of the function are:";
+    }

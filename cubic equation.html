@@ -1,0 +1,189 @@
+<html>
+<head>
+
+  <title>Math Equations Solver | cubic equation solver</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+  <meta name="description" content="math.js | basic usage">
+
+
+  <div style="position: absolute; top:5px; left: 60px" onclick="buttonclick3()">
+  <p style="font-size: 35px" class="paragraph"><b>M</b>ath <b>E</b>quations <b>S</b>olver</p>
+  </div>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+
+  </header>
+
+<div class="secondheader" style="position: absolute; left:415.25; z-index: -6">
+<h1 id="header2" style="width: 535px; height: 559px; background-color: #ff5465"></h1>
+</div>
+
+  <div class="wrapper" style="position: relative" onclick="buttonclick2()">
+  <nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Algebra ▾
+      <ul>
+        <li>Quadratic Equation</li>
+        <li>Cubic Equation</li>
+      </ul>
+    </li>
+    <li>Geometry</li>
+  </ul>
+  </nav>
+  </div>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 300px; top: 100px; width: 300px; z-index: -7">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 950px; top: 300px; width: 300px; z-index: -7">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1165px; top: 100px; width: 200px; z-index: -7">
+    <source src="polygon.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 740px; top: 100px; width: 300px; z-index: -7">
+    <source src="sphere.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 800px; top: 400px; width: 170px; z-index: -7">
+    <source src="cube.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: -100px; top: 100px; width: 300px; z-index: -7">
+    <source src="cone.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 400px; top: 400px; width: 150px; z-index: -7">
+    <source src="cylinder.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 50px; top: 300px; width: 300px; z-index: -7">
+    <source src="sphere2.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1215px; top: 450px; width: 150px; z-index: -7">
+    <source src="tetrahedron.mp4" type="video/mp4">
+  </video>
+
+  <div class="line">
+  </div>
+
+  <p class="text1" style="cursor: default"><b>Solve a cubic equation!</b></p>
+  <p class="text2" style="cursor: default"><b>Write the coefficients of the equation:</b></p>
+
+  <div style="position: absolute; top: 191px; left:530px">
+  <p class="fieldset"><b>x<sup>3</sup> +</b></p>
+  </div>
+
+  <div style="position: relative; top: 124px; left:219px">
+  <p class="fieldset"><b>x<sup>2</sup> +</b></p>
+  </div>
+
+  <div style="position: relative; top: 104px; left:314px">
+  <p class="fieldset"><b>x +</b></p>
+  </div>
+
+
+  <div style="position: absolute; top:190px; left: 472px">
+  <input type="text" id="inputt" class="input1" name="input" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="a">
+  </div>
+
+  <div style="position:absolute; left: 563px; top: 191px">
+  <input type="text" id="inputt2" name="input2" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="b">
+  </div>
+
+  <div style="position:absolute; left: 654px; top: 191px">
+  <input type="text" id="inputt3" name="input3" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="c">
+  </div>
+
+  <div style="position:absolute; left: 745px; top: 191px">
+  <input type="text" id="inputt4" name="input4" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="d">
+  </div>
+
+  <div class="box" onclick = "buttonclick()" style="position: absolute; top: 189.4px; left: 855px">
+  <button type="button" name="button" class="btn" style="color: white; border-width: 2px; cursor: pointer; line-height: 30px; width: 75px"><b>Calculate!</b></button>
+  </div>
+
+  <script language="javascript" type="text/javascript">
+    function buttonclick(){
+      document.getElementById("output").removeAttribute("hidden");
+      var a = document.getElementById("inputt").value;
+      var b = document.getElementById("inputt2").value;
+      var c = document.getElementById("inputt3").value;
+      var d = document.getElementById("inputt4").value;
+      var p = math.divide(math.multiply(b,-1),math.multiply(3,a));
+      var q = math.sum(math.pow(p,3),math.divide(math.subtract(math.multiply(b,c),math.multiply(3,a,d)),math.multiply(6,a,a)));
+      var r = math.divide(c,math.multiply(3,a));
+      var s = math.add(math.cbrt(math.add(q,math.sqrt(math.add(math.pow(q,2),math.pow(math.subtract(r,math.pow(p,2)),3))))),math.cbrt(math.subtract(q,math.sqrt(math.add(math.pow(q,2),math.pow(math.subtract(r,math.pow(p,2)),3))))),p);
+      var k = (-d/(1*a))/s;
+      var t = math.subtract(math.divide(-b,a),s);
+      var l = math.round(math.divide(math.add(t,math.sqrt(math.subtract(math.pow(t,2),math.multiply(4,k)))),2),4);
+      var p = math.round(math.divide(math.subtract(t,math.sqrt(math.subtract(math.pow(t,2),math.multiply(4,k)))),2),4);
+
+      document.getElementById("demob").innerHTML=math.round(s,4);
+
+      document.getElementById("demo2").innerHTML=math.round(l,4);
+
+      document.getElementById("demo").innerHTML=math.round(p,4);
+
+      document.getElementById("demo3").innerHTML=math.round(math.add(s,l,p),4);
+
+      document.getElementById("demo4").innerHTML=math.round(math.multiply(s,l,p),4);
+
+      document.getElementById("range").innerHTML=math.round(math.multiply(s,l,p),4);
+
+      document.getElementById("demo7").innerHTML="jaj";
+}
+
+    function buttonclick2(){
+      window.location.href = event.target.innerHTML + ".html";
+    }
+
+    function buttonclick3(){
+      window.location.href = "home.html";
+    }
+  </script>
+
+  <div id="field" class="set" style="position: absolute; top: 260px; left: 500.75px">
+  <fieldset hidden id="output" class="fieldset" style="width: 300px">
+    <legend><b>Output</b></legend>
+      <p> ‎ </p>
+      <span id="demmo"></span>
+      <p></p>
+      <div id="span1"><span>x<sub>1</sub> = </span><span class="fieldset" id="demo"></span>
+      <p></p>
+      <span>x<sub>2</sub> = </span><span class="fieldset" id="demo2"></span>
+      <p></p>
+      <span>x<sub>3</sub> = </span><span class="fieldset" id="demob"></span>
+      </div>
+      <p>‏‏‎ ‎ </p>
+      <span id ="sub4">Sum of roots = <span class="fieldset" id="demo3"></span>
+      <p></p>
+      <span>product of roots = <span class="fieldset" id="demo4"></span></span>
+      <p>‏‏‎ </p></span>
+      (x<sub>0</sub>,y<sub>0</sub>) = <span class="fieldset" id="demo5"></span><span class="fieldset" id="demo6"></span>
+      <p></p>
+      Y-intercepts at = <span class="fieldset" id="demo7"></span>
+      <p>‎ </p>
+      Domain = (-∞;∞)
+      <p></p>
+      Range = (-∞;∞)
+  </div>
+
+  </fieldset>
+</body>
+
+</html>

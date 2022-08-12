@@ -1,0 +1,207 @@
+<html>
+<head>
+
+  <title>Math Equations Solver | Quadratic equation solver</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+  <div style="position: absolute; top:5px; left: 60px" onclick="buttonclick3()">
+  <p style="font-size: 35px" class="paragraph"><b>M</b>ath <b>E</b>quations <b>S</b>olver</p>
+  </div>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+
+  </header>
+
+<div class="secondheader" style="position: absolute; left: 480px; z-index: -6">
+<h1 id="header2" style="width: 400px; height: 559px; background-color: #ff5465"></h1>
+</div>
+
+  <div class="wrapper" style="position: relative" onclick="buttonclick2()">
+  <nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Algebra ▾
+      <ul>
+        <li>Quadratic Equation</li>
+        <li>Cubic Equation</li>
+      </ul>
+    </li>
+    <li><a>Geometry</a></li>
+  </ul>
+  </nav>
+  </div>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 300px; top: 100px; width: 300px; z-index: -7">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 950px; top: 300px; width: 300px; z-index: -7">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1165px; top: 100px; width: 200px; z-index: -7">
+    <source src="polygon.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 740px; top: 100px; width: 300px; z-index: -7">
+    <source src="sphere.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 800px; top: 400px; width: 170px; z-index: -7">
+    <source src="cube.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: -100px; top: 100px; width: 300px; z-index: -7">
+    <source src="cone.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 400px; top: 400px; width: 150px; z-index: -7">
+    <source src="cylinder.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 50px; top: 300px; width: 300px; z-index: -7">
+    <source src="sphere2.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1215px; top: 450px; width: 150px; z-index: -7">
+    <source src="tetrahedron.mp4" type="video/mp4">
+  </video>
+
+  <div class="line">
+  </div>
+
+  <div class="line5">
+  </div>
+
+  <div class="line6">
+  </div>
+
+  <div class="line7">
+  </div>
+
+
+  <p class="text1" style="cursor: default"><b>Solve a quadratic equation!</b></p>
+  <p class="text2" style="cursor: default"><b>Write the coefficients of the equation:</b></p>
+
+  <div style="position: absolute; top: 191px; left:560px">
+  <p class="fieldset"><b>x<sup>2</sup> +</b></p>
+  </div>
+
+  <div style="position: relative; top: 127px; left:256px">
+  <p class="fieldset"><b>x +</b></p>
+  </div>
+
+
+  <div style="position: absolute; top:190px; left: 502px">
+  <input type="number" id="inputt" class="input1" name="input" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="a">
+  </div>
+
+  <div style="position:absolute; left: 598px; top: 191px">
+  <input type="number" id="inputt2" name="input2" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="b">
+  </div>
+
+  <div style="position:absolute; left: 689px; top: 191px">
+  <input type="number" id="inputt3" name="input3" style="width: 50px; height: 30px; border-width: 1px; border-color: black; text-align:center" placeholder="c">
+  </div>
+
+  <div class="box" onclick = "buttonclick()" style="position: absolute; top: 190px; left: 775px">
+  <button type="button" name="button" class="btn" style="color: white; border-width: 2px; cursor: pointer; line-height: 30px; width: 75px"><b>Calculate!</b></button>
+  </div>
+
+  <script language="javascript" type="text/javascript">
+    function buttonclick(){
+      document.getElementById("output").removeAttribute("hidden");
+      var a = document.getElementById("inputt").value;
+      var b = document.getElementById("inputt2").value;
+      var c = document.getElementById("inputt3").value;
+      var d = ((-b-Math.sqrt(b*b-4*a*1*c)))/(2*a);
+      var e = -b/a;
+      var f = ((-b-Math.sqrt(b*b-4*a*1*c)))/(2*a);
+      var g = e-d;
+      var h = c/a;
+      var i = -b/(2*a);
+      var j = -(b*b-4*a*1*c)/(4*a);
+      var field = document.getElementById("field");
+
+      if (b*b-4*a*1*c<0) {
+        document.getElementById("demmo").innerHTML="Sorry, equation has no solution. However, other properties of the function are:";
+        document.getElementById("demo3").innerHTML= e.toFixed(3);
+        document.getElementById("demo4").innerHTML= h.toFixed(3);
+        document.getElementById("demo5").innerHTML= "(" + i.toFixed(3) + ",";
+        document.getElementById("demo6").innerHTML= j.toFixed(3)+")";
+        document.getElementById("demo2").innerHTML= "";
+        document.getElementById("span1").style.display = "none";
+        document.getElementById("sub4").style.display = "none";
+        document.getElementById("output").style.width = "300px";
+        document.getElementById("demo7").innerHTML= c;
+        document.getElementById("field").style.left = "495px";
+
+      }
+      else {
+      document.getElementById("demmo").innerHTML= "";
+      document.getElementById("demo").innerHTML= d.toFixed(3);
+      document.getElementById("demo2").innerHTML= g.toFixed(3);
+      document.getElementById("demo3").innerHTML= e.toFixed(3);
+      document.getElementById("demo4").innerHTML= h.toFixed(3);
+      document.getElementById("demo5").innerHTML= "(" + i.toFixed(3) + ",";
+      document.getElementById("demo6").innerHTML= j.toFixed(3)+")";
+      document.getElementById("output").style.width = "300px";
+      document.getElementById("field").style.left = "500px";
+      document.getElementById("demo7").innerHTML= c;
+      document.getElementById("span1").style.display = "block";
+      document.getElementById("sub4").style.display = "block";
+      }
+
+      if (a>0) {
+        document.getElementById("range").innerHTML= "(" + j.toFixed(3) + ";∞)";
+      }
+
+      else {
+        document.getElementById("range").innerHTML= "(-∞;" + j.toFixed(3) + ")"
+      }
+    }
+
+    function buttonclick2(){
+      window.location.href = event.target.innerHTML + ".html";
+    }
+
+    function buttonclick3(){
+      window.location.href = "home.html";
+    }
+  </script>
+
+  <div id="field" class="set" style="position: absolute; top: 260px; left: 400px">
+  <fieldset hidden id="output" class="fieldset" style="width: 300px">
+    <legend><b>Output</b></legend>
+      <p> ‎ </p>
+      <span id="demmo"></span>
+      <p></p>
+      <div id="span1"><span>x<sub>1</sub> = </span><span class="fieldset" id="demo"></span>
+      <p></p>
+      <span>x<sub>2</sub> = </span><span class="fieldset" id="demo2"></span></div>
+      <p>‏‏‎ ‎ </p>
+      <span id ="sub4">Sum of roots = <span class="fieldset" id="demo3"></span>
+      <p></p>
+      <span>product of roots = <span class="fieldset" id="demo4"></span></span>
+      <p>‏‏‎ </p></span>
+      (x<sub>0</sub>,y<sub>0</sub>) = <span class="fieldset" id="demo5"></span><span class="fieldset" id="demo6"></span>
+      <p></p>
+      Y-intercepts at = <span class="fieldset" id="demo7"></span>
+      <p>‎ </p>
+      Domain = (-∞;∞)
+      <p></p>
+      Range = <span class="fieldset" id="range"></span>
+  </div>
+
+  </fieldset>
+</body>
+
+</html>

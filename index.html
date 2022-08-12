@@ -1,0 +1,88 @@
+<html>
+<head>
+
+  <title>Math Equations Solver</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+  <div style="position: absolute; top:5px; left: 60px" onclick=buttonclick3()>
+  <p style="font-size: 35px" class="paragraph"><b>M</b>ath <b>E</b>quations <b>S</b>olver</p>
+  </div>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+
+  </header>
+
+  <div class="wrapper" style="position: relative" onclick="buttonclick2()">
+  <nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Math <i class="fas fa-caret-down"></i>
+      <ul>
+        <li>Quadratic equation</li>
+        <li>Cubic equation</li>
+      </ul>
+    </li>
+    <li>Geometry</li>
+  </ul>
+  </nav>
+  </div>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 300px; top: 100px; width: 300px; z-index: -5">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 950px; top: 300px; width: 300px; z-index: -5">
+    <source src="prism.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1165px; top: 100px; width: 200px; z-index: -5">
+    <source src="polygon.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 740px; top: 100px; width: 300px; z-index: -5">
+    <source src="sphere.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 800px; top: 400px; width: 170px; z-index: -5">
+    <source src="cube.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: -100px; top: 100px; width: 300px; z-index: -5">
+    <source src="cone.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 400px; top: 400px; width: 150px; z-index: -5">
+    <source src="cylinder.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 50px; top: 300px; width: 300px; z-index: -5">
+    <source src="sphere2.mp4" type="video/mp4">
+  </video>
+
+  <video autoplay muted loop id="myVideo" style="position: absolute; left: 1215px; top: 450px; width: 150px; z-index: -5">
+    <source src="tetrahedron.mp4" type="video/mp4">
+  </video>
+
+  <script>
+
+  function buttonclick2(){
+    window.location.href = event.target.innerHTML + ".html";
+  }
+
+  function buttonclick3(){
+    window.location.href = "home.html";
+  }
+  </script>
+
+
+</body>
+
+</html>

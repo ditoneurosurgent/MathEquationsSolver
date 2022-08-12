@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width:1365.5px;
+  height: 56px;
+  background-color:#ff5465;
+  left: 400px;
+}
+
+.paragraph {
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+
+.fieldset {
+  font-family: 'Lato', sans-serif;
+  cursor: default;
+  font-size: 17px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: absolute;
+  left: 800px;
+  top: -62px;
+  border-color: black;
+  border-width: 2px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.wrapper ul {
+  list-style: none;
+  margin-top: 2%;
+}
+
+.wrapper ul li {
+  background: #ff5465;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: black;
+  font-size: 15px;
+  position: relative;
+}
+
+
+.wrapper ul li:hover {
+  background: #f73b4e;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.wrapper ul ul {
+  display: none;
+}
+
+.wrapper ul li:hover >ul {
+  display: block;
+  transition: 4s;
+}
+
+.wrapper ul ul li {
+  font-size: 13px;
+  line-height: 45px;
+  text-align: center;
+  height: 45px;
+  width: 120px;
+  padding-left: 3px;
+  top: -2px;
+}
+
+
+html, body {
+  width: 565px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.btn {
+  background-color: #4670a9;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #325c94;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+fieldset {
+  padding-inline-start:1.9em;
+  padding-inline-end:1.9em;
+  cursor: default;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+
+legend {
+  font-size: 20px;
+  cursor: default;
+}
+
+
+.text1 {
+  font-family: 'Lato', sans-serif;
+  left: 514px;
+  top: 80px;
+  position: absolute;
+  min-width: 340px;
+  font-size: 29px;
+  text-align: center;
+  color: white;
+}
+
+.text2 {
+  font-family: 'Lato', sans-serif;
+  left: 546.53px;
+  top:154px;
+  position: absolute;
+  min-width: 500px;
+  font-size: 17px;
+}
+
+.text3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+
+.line {
+  border-top: 5px solid #4670a9;
+  width: 1365.5px;
+  position: absolute;
+  left: 0px;
+  top: 55px;
+  z-index: -5;
+}
+
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.secondheader {
+  border: 5px solid #4670a9;
+}
